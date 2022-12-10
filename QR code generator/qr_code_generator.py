@@ -14,4 +14,5 @@ def generatre_qrcode(text):
     img = qr.make_image(fill_color="black", back_coler="white")
     img.save("qrimg.png")
 
-generatre_qrcode("https://google.com")
+url = input("Enter your url: ")
+generatre_qrcode(url)
